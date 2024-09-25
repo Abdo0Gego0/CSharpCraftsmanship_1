@@ -1,12 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace reverseSentence
+class program
 {
-    internal class reverse
+    static void Main(String[] args)
     {
+        Console.WriteLine(" Enter your Sentence");
+        string str = Console.ReadLine();
+        Console.WriteLine(string.Join(" ",str.Split(' ')[..^1].Reverse()));
     }
 }
