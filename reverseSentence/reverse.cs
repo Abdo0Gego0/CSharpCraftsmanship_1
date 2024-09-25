@@ -1,10 +1,13 @@
 ﻿using System;
-class program
+
+class Program
 {
-    static void Main(String[] args)
+    static void Main(string[] args)
     {
-        Console.WriteLine(" Enter your Sentence");
+        Console.WriteLine("Enter your Sentence");
         string str = Console.ReadLine();
-        Console.WriteLine(string.Join(" ",str.Split(' ')[..^1].Reverse()));
+
+        // Reverse the order of words and output
+        Console.WriteLine(string.Join(" ", str.Split(' ').Reverse()));
     }
 }
